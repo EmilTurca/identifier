@@ -1,0 +1,25 @@
+<script>
+    let cost = 0
+    let discound = 20
+    let serviceOneSelected = confirm("1. Teeth whitening ?")
+    if (serviceOneSelected) {
+        cost += 500
+    }
+    let serviceTwoSelected = confirm("2. Tooth correction ?")
+    if (serviceTwoSelected) {
+            cost += 1500
+        }
+    let serviceThreeSelected = confirm("3. Tooth extraction ?") 
+    if (serviceThreeSelected) {
+        cost += 1000
+    }
+    finalCost = cost
+    if (cost > 2000) {
+            finalCost = (100 - discound) * cost / 100
+        }
+    else {
+        discound = 0
+    }
+    alert("Total cost " + cost + "\n" + "discound " + discound + "%" + "\n" 
+    + "cost with discound " + finalCost)
+</script>
