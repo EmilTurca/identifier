@@ -30,9 +30,9 @@
     <div id="controls">
         <div>
             <button onclick="
-            top -= 10
-            top < 0 ? top = 0 : null
-            box.innerHTML = `<div class='robot' style='margin-top: ${top}px'><div>`"><img src="https://icons.iconarchive.com/icons/pictogrammers/material-light/48/arrow-up-icon.png"></button>
+            UP -= 10
+            UP < 0 ? UP = 0 : null
+            box.innerHTML = `<div class='robot' style='margin-top: ${UP}px'><div>`"><img src="https://icons.iconarchive.com/icons/pictogrammers/material-light/48/arrow-up-icon.png"></button>
         </div>
         <div>
             <button onclick="
@@ -46,14 +46,14 @@
         </div>
         <div>
             <button onclick="
-            top += 10
-            top > 350 ? top = 350 : null
-            box.innerHTML = `<div class='robot' style='margin-top: ${top}px'><div>`"><img src="https://icons.iconarchive.com/icons/icons8/ios7/48/Arrows-Down-icon.png"></button>
+            UP += 10
+            UP > 350 ? UP = 350 : null
+            box.innerHTML = `<div class='robot' style='margin-top: ${UP}px'><div>`"><img src="https://icons.iconarchive.com/icons/icons8/ios7/48/Arrows-Down-icon.png"></button>
         </div>
     </div>
     <script>
         left = 0;
-        top = 0;
+        let UP = 0;
     </script>
 </body>
 </html>
